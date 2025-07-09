@@ -4,10 +4,10 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import editor from "../../Assets/Projects/codeEditor.jpg";
+import chatify from "../../Assets/Projects/chatify.jpg";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import bitsOfCode from "../../Assets/Projects/blog.jpg";
 
 function Projects() {
   return (
@@ -25,10 +25,12 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="GoRICO"
+              description={`Conducted an in-depth security assessment of GoRICO, Accorian’s proprietary Governance, Risk, and Compliance (GRC) automation platform, emulating real-world attacker behavior through a combination of manual exploitation and automated testing to evaluate the platform’s security posture.\n
+Identified and reported several critical and medium-severity vulnerabilities, including Stored and Reflected XSS, malicious file upload, HTML injection in email content, rate limiting bypass, and business logic flaws.\n
+Uncovered key issues such as improper error handling, use of components with known vulnerabilities, weak TLS configurations, server-side validation gaps, and server information disclosure.\n
+Delivered comprehensive, risk-prioritized reports with CVSS scoring, technical impact analysis, and clear remediation guidance.\n
+The engagementled to significant improvements in application resilience and reduced overall attack surface.`}
             />
           </Col>
 
@@ -36,55 +38,19 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
+              title="Leading Healthcare Web Application (Confidential)"
+              description={`Conducted end-to-end penetration testing on a healthcare web app using Black/Grey Box approaches. Identified critical XSS, business logic flaws, and malicious file upload issues across web, API, and cloud infrastructure.\n
+              Delivered CVSS-scored reports with technical and business impact. Collaborated cross-functionally using Burp Suite Pro, OWASP ZAP, Nmap, and Tenable to mitigate risks in an agile environment.`}/>
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Payatu Bandit Store & Maximus Tool"
+              description={`Led end-to-end VAPT of the Payatu Bandit Store application, covering Web and API layers. Simulated real-world attack scenarios to uncover critical vulnerabilities including SQL Injection, Reflected XSS, and Broken Authentication. Findings were mapped to OWASP Top 10 and CVE standards.\n
+              Used a combination of manual and automated techniques with tools like Maximus (Payatu’s internal platform), Burp Suite, OWASP ZAP, and Nmap. Delivered detailed reports with CVSS scores, reproduction steps, and risk ratings. Worked closely with developers to validate fixes and enforce secure coding practices through collaborative remediation sessions.\n
+              Contributed to Payatu’s Coordinated Vulnerability Disclosure (CVD) program using Maximus for vulnerability tracking and reporting automation. Helped improve the secure SDLC by streamlining disclosure workflows and providing actionable, best-practice-aligned mitigation strategies.`}          
             />
           </Col>
         </Row>

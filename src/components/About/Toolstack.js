@@ -1,30 +1,46 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
-} from "react-icons/si";
+  FaBug,
+  FaShieldAlt,
+  FaNetworkWired,
+  FaTerminal,
+  FaSearch,
+  FaLock,
+  FaDatabase,
+  FaExclamationTriangle,
+  FaSkullCrossbones,
+} from "react-icons/fa";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <FaBug /> {/* Burp Suite */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <FaShieldAlt /> {/* OWASP ZAP */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <FaNetworkWired /> {/* Nmap */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        <FaTerminal /> {/* Metasploit */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <FaSearch /> {/* Nessus */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaLock /> {/* Qualys */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaExclamationTriangle /> {/* Nikto */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaDatabase /> {/* SQLMap */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaSkullCrossbones /> {/* Exploit-DB */}
       </Col>
     </Row>
   );
